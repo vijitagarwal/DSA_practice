@@ -107,3 +107,15 @@ while True:
             print("invalid choice")
     except ValueError:
         print("please enter a valid integer number")
+
+    def reverse(self):
+        prev=None
+        curr=self.head
+
+        while curr is not None:
+            next_node=curr.next
+            curr.next=prev
+            prev=curr
+            curr=next_node
+
+        self.head=prev

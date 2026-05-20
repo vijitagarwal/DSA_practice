@@ -15,7 +15,7 @@ class LL:
             new_node.next=self.head
             self.head=new_node
             print(f"inserted {element} at the beginning of linked list")
-            
+
         except ValueError:
             print("Invalid input type")
 
@@ -60,6 +60,7 @@ class LL:
             if self.head is None:
                 print("list is empty and you are not inserting at beginning")
                 return
+            
             temp=self.head
             for i in range(position-2):
                 if temp.next is None:
@@ -147,6 +148,7 @@ class LL:
         if self.head is None:
             print("Linked List is empty")
             return
+        
         try: 
             key=int(input("enter the key you want to search for: "))
             temp=self.head

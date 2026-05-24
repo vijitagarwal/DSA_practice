@@ -26,4 +26,3 @@ bubble_sort(arr)
 
 print("Sorted Array:")
 print(arr)
-print(len(arr))
